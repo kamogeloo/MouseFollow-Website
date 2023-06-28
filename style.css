@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: #f2ede7;
+    --text-color: rgb(0, 0, 0);
+    --blue-color: #00b2ff;
+    --orange-color: #f46700;
+}
+
+body{
+    color: var(--text-color);
+    background-color: var(--background-color);
+    height: auto;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100vw;
+    height: 7vh;
+    margin-top: 3vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-style: dashed;
+    
+    flex: 1 0 0;
+
+}
+.nav-logo{
+    width: 6rem;
+    height: 5rem;
+    margin-left: 1.5rem;
+    
+    
+}
+
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    
+   
+}
+
+.nav-item{
+    font-weight: 500;
+    padding: 1.5rem 1rem;
+   
+}
+.content{
+    height: 80vh;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-image-placeholder{
+    width: 30%;
+    height: 60%;
+    margin-left: 50%;
+    position: absolute;
+}
+.content-image{
+    width: 30%;
+    height: 60%;
+    margin-top: 12%;
+    margin-left: 44%;
+    position: absolute;
+}
+
+
+#circleFollow{
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid var(--orange-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition: all .075s ease;
+    z-index: 2;
+}
+
+
+footer{
+ width: 100vw;
+ height: 10vh;
+ border: 2px solid black;
+ border-style: dashed;
+ margin-top: 45rem;
+ position: fixed;
+ 
+}
